@@ -1,0 +1,464 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ************************************ navigation start here ********************************************************** */
+
+.navi{
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    background-color: #ffff;
+}
+
+.navi> header> div{
+    display: inline-block;
+}
+
+.navi>header{
+    /* margin-top: 0%; */
+    position: relative;
+}
+.header-child1{
+ width: 50%;
+ position: absolute;
+ margin: 1%;
+ letter-spacing: 2px;
+}
+.header-child2{
+ width: 50%;
+ position: absolute;
+ right: 1%;
+ /* margin: 2%; */
+ margin-top: 20px;
+ text-align: center;
+}
+
+.navi-anchor{
+    text-decoration: none;
+    font-size: larger ;
+    margin: 2%;
+    color: #957e7e;
+    letter-spacing: 2px;
+}
+
+
+/* ************************************ navigation end here ********************************************************** */
+
+/* ************************************ our product start here ********************************************************** */
+
+.our-products{
+    height: 90vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/46e8bacfa13d5e5ab7947ff9/-min.jpg");
+    position: relative;
+}
+
+.our-products-child{
+    height: 55%;
+    width: 70%;
+    /* border: 2px solid red;   */
+    position: absolute;
+    /* top: 40%; */
+    left: 15%;
+    color: white;
+    text-align: center;
+    bottom: 5px;
+    line-height: 65px;
+    
+}
+.product-text1{
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    font-size: xx-large;
+}
+.products-btn{
+    text-transform: uppercase;
+    color: #ffff;
+    height: 50px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: inherit;
+    margin:1%;
+    font-weight: 700;
+}
+.products-btn:hover{
+    background-color: aliceblue;
+    opacity: 0.5;
+    color: #070707;
+    cursor: pointer;
+}
+/* ************************************ our product end here ********************************************************** */
+
+/* ************************************ organic bread start here ********************************************************** */
+.organic-title{
+    position: absolute; top: 2%; left: 40%;
+}
+.organic-breads{
+    height: 150vh;
+    width: 100%;
+    background-color: #e5e5e5;
+    text-align: center;
+    position: relative;
+   
+    /* align-content: space-around;    */
+}
+
+.grid-container{
+    height: 80%;
+    width: 80%;
+    /* height: fit-content;
+    width: fit-content; */
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    justify-content: space-evenly;
+
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+ 
+}
+.organic-child{
+    height: 90%;
+    width: 90%;
+    /* border: 2px solid red; */
+    margin: 12px;
+    padding: 6px;
+    background-color:#ffff;
+}
+.organic-child-img{
+    height: 50%;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: 15px;
+}
+
+.organic-img{
+    height:100%;
+    width:inherit;
+}
+
+/* ************************************ organic bread end here ********************************************************** */
+
+
+/* ************************************ brownies start here ********************************************************** */
+
+.brownies{
+    height: 150vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    text-align: center;
+    position: relative;
+}
+.brownies-title{
+    position: absolute; top: 2%; left: 33%;
+}
+
+
+/* ************************************ brownies end here ********************************************************** */
+
+/* ************************************ contact-us start here ********************************************************** */
+
+.contact-us{
+    height: 110vh;
+    width: 100%;
+    background-image: url("	https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b01f1f1be80954858db0a36a/-min.jpg");
+    background-position: 50% 50%;
+    position: relative;
+}
+.contact-child{
+    height: 90%;
+    width: 60%;
+    /* border: 2px solid red; */
+    position:absolute;
+    left: 20%;
+    top: 8%;
+}
+.inputs{
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+}
+.submit-btn{
+    width: 90%;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-left: 39px;
+}
+.submit-btn:hover{
+    opacity: 0.7;
+}
+.find-us{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+/* ************************************ contact-us end here ********************************************************** */
+
+/* ************************************ footer start here ********************************************************** */
+
+.foot-parent{
+    height: 15vh;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    /* text-align: center; */
+    position: relative;
+}
+.foot-parent>footer{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+/* ************************************ footer end here ********************************************************** */
+
+/* ************************************ media query start here ********************************************************** */
+
+@media screen and (min-width:920px) and (max-width:1080px){
+ 
+ .header-child1{
+    width:20%;
+ }
+ .header-child2{
+    width: 80%;
+ }
+ .contact-child{
+    left: 18%;
+}
+.foot-parent>footer{
+    left: 30%;
+}
+
+}
+@media screen and (min-width:720px) and (max-width:920px) {
+   
+    .header-child1{
+        width:fit-content;
+     }
+     .header-child2{
+        width: 95%;
+     }
+     .our-products-child{
+        left: 10%;
+     }
+     .organic-breads{
+        height: 190vh;
+        width: 100%;
+     }
+     .organic-title{
+        top: 1%;
+        left: 27%;
+     }
+     .grid-container{
+        height: fit-content;
+        width: fit-content;
+        left: 0%;
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        gap: 0.1rem;
+        justify-content: space-around;
+        top: 4%;
+     }
+     .organic-child{
+        height: 70%;
+        width: fit-content;
+     }
+
+     .brownies{
+        height: 160vh;
+        width: 100%;
+     }
+     .brownies-title{
+        top: 1%;
+        left: 20%;
+     }
+     .contact-child{
+        width: 100%;
+        left: 0%;
+     }
+     .contact-us{
+        height: 60vh;
+     }
+     .foot-parent>footer{
+        left: 30%;
+    }
+    .contact-child{
+        left: 18%;
+    }
+    .foot-parent>footer{
+        left: 30%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:720px) {
+    .navi{
+        height: 25vh;
+        width: auto;
+    }
+    .header-child1>a{
+        display:none;
+     }
+
+     .header-child2{
+        width: 100%;
+     }
+     .navi-anchor{
+        display: block;
+     }
+     .our-products-child{
+        left: 5%;
+        width: fit-content;
+        height: fit-content;
+     }
+     .organic-breads{
+        height: 700vh;
+        width: 100%;
+     }
+     .organic-title{
+        top: 1%;
+        left: 11%;
+     }
+     .grid-container{
+        height: fit-content;
+        width: fit-content;
+        left: 0%;
+        display: inline-grid;
+        grid-template-columns: auto;
+        gap: 0.1rem;
+        justify-content: space-around;
+        top: 3%;
+     }
+     .organic-child{
+        height: 70%;
+        width: fit-content;
+        padding:5%;
+     }
+
+     .brownies{
+        height: 620vh;
+        width: 100%;
+     }
+     .brownies-title{
+        top: 1%;
+        left: 11%;
+     }
+     .contact-child{
+        width: 100%;
+        left: 0%;
+     }
+     .contact-us{
+        height: 90vh;
+     }
+     .foot-parent>footer{
+        left: 30%;
+    }
+
+}
+
+@media screen and (min-width:280px) and (max-width:480px) {
+    
+    .navi{
+        height: 25vh;
+        width: 100%;
+    }
+    .header-child1>a{
+        display:none;
+     }
+
+     .header-child2{
+        width: 100%;
+     }
+     .navi-anchor{
+        display: block;
+     }
+
+     .our-products-child{
+        left: 0%;
+        width: fit-content;
+        height: fit-content;
+     }
+
+     .organic-breads{
+        height: 500vh;
+        width: 100%;
+     }
+     .organic-title{
+        top: 1%;
+        left: 3%;
+     }
+     .grid-container{
+        height: fit-content;
+        width: fit-content;
+        left: 0%;
+        display: inline-grid;
+        grid-template-columns: auto;
+        gap: 0.1rem;
+        justify-content: space-around;
+        top: 5%;
+     }
+     .organic-child{
+        height: 70%;
+        width: fit-content;
+        padding:5%;
+     }
+
+     .brownies{
+        height: 450vh;
+        width: 100%;
+     }
+     .brownies-title{
+        top: 1%;
+        left: 0%;
+     }
+    .contact-child{
+        width: 100%;
+        left: 0%;
+        top: 0%;
+    }
+    .submit-btn{
+       width: 100%;
+       margin-left: 0%;
+    }
+    .foot-parent>footer{
+        left: 10%;
+    }
+    .find-us{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .find-us>div{
+        margin-left: 15%;
+    }
+    .contact-us{
+        height: 165vh;
+    }
+}
+
+
+
+/* ************************************ media query end here ********************************************************** */
+
